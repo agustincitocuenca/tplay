@@ -22,7 +22,6 @@ public class BoardTTest {
         }
     }
 
-
     @Test
     public void testagregarMatrizAleatoria() {
 
@@ -31,6 +30,17 @@ public class BoardTTest {
 
         Board.agregarMatrizAleatoria(matrix10x20,Board.PieceLIzquierda);
         Board.agregarMatrizAleatoria(matrix10x20, Board.PieceLDerecha);
+        Board.agregarMatrizAleatoria(matrix10x20, Board.PieceLArriba);
+        Board.agregarMatrizAleatoria(matrix10x20, Board.PieceLAbajo);
+        Board.agregarMatrizAleatoria(matrix10x20, Board.PieceStickHorizontal);
+        Board.agregarMatrizAleatoria(matrix10x20, Board.PieceStickVertical);
+        Board.agregarMatrizAleatoria(matrix10x20, Board.PieceTAbajo);
+        Board.agregarMatrizAleatoria(matrix10x20, Board.PieceTArriba);
+        Board.agregarMatrizAleatoria(matrix10x20, Board.PieceTIzquierda);
+        Board.agregarMatrizAleatoria(matrix10x20, Board.PieceTDerecha);
+        Board.agregarMatrizAleatoria(matrix10x20, Board.PieceSquare);
+        Board.agregarMatrizAleatoria(matrix10x20, Board.PieceDogDerecha);
+        Board.agregarMatrizAleatoria(matrix10x20, Board.PieceDogIzquierda);
 
         // Comprobar si hay al menos un valor diferente de cero en la matriz
         boolean encontrado = false;

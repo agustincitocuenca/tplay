@@ -4,7 +4,19 @@ import java.util.Random;
 public class Board {
     public static int[][] PieceLIzquierda= {{0, 5, 0, 0}, {0, 6, 0, 0}, {6, 7, 0, 0}, {0, 0, 0, 0}};;
     public static int[][] PieceLDerecha= {{1, 0, 0, 0}, {2, 0, 0, 0}, {3, 4, 0, 0}, {0, 0, 0, 0}};;
-    public static int[][] PieceLArriba = {{8, 9, 10, 0}, {0, 0, 11, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
+    public static int[][] PieceLArriba= {{8, 9, 10, 0}, {0, 0, 11, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
+    public static int[][] PieceLAbajo= {{0, 0, 15, 0}, {12, 13, 14, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
+    public static int[][] PieceStickHorizontal= {{16, 17, 18, 19}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
+    public static int[][] PieceStickVertical= {{20, 0, 0, 0}, {21, 0, 0, 0}, {22, 0, 0, 0}, {23, 0, 0, 0}};
+    public static int[][] PieceTArriba = {{24, 25, 26, 0}, {0, 27, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
+    public static int[][] PieceTIzquierda = {{28, 0, 0, 0}, {29, 30, 0, 0}, {31, 0, 0, 0}, {0, 0, 0, 0}};
+    public static int[][] PieceTDerecha = {{0, 0, 32, 0}, {0, 33, 34, 0}, {0, 0, 35, 0}, {0, 0, 0, 0}};
+    public static int[][] PieceTAbajo = {{0, 0, 0, 0}, {0, 36, 0, 0}, {37, 38, 39, 0}, {0, 0, 0, 0}};
+    public static int[][] PieceSquare = {{40, 41, 0, 0}, {42, 43, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
+    public static int[][] PieceDogIzquierda = {{44, 45, 0, 0}, {47, 48, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
+    public static int[][] PieceDogDerecha = {{0, 0, 0, 0}, {49, 50, 0, 0}, {51, 52, 0, 0}, {0, 0, 0, 0}};
+
+
 
 
     public static void main(String[] args) {
@@ -15,16 +27,16 @@ public class Board {
         //int[][] PieceLDerecha = {{1, 0, 0, 0}, {2, 0, 0, 0}, {3, 4, 0, 0}, {0, 0, 0, 0}};
         //int[][] PieceLIzquierda = {{0, 5, 0, 0}, {0, 6, 0, 0}, {6, 7, 0, 0}, {0, 0, 0, 0}};
         //int[][] PieceLArriba = {{8, 9, 10, 0}, {0, 0, 11, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
-        int[][] PieceLAbajo = {{0, 0, 15, 0}, {12, 13, 14, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
-        int[][] PieceStickHorizontal = {{16, 17, 18, 19}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
-        int[][] PieceStickVertical = {{20, 0, 0, 0}, {21, 0, 0, 0}, {22, 0, 0, 0}, {23, 0, 0, 0}};
-        int[][] PieceTArriba = {{24, 25, 26, 0}, {0, 27, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
-        int[][] PieceTIzquierda = {{28, 0, 0, 0}, {29, 30, 0, 0}, {31, 0, 0, 0}, {0, 0, 0, 0}};
-        int[][] PieceTDerecha = {{0, 0, 32, 0}, {0, 33, 34, 0}, {0, 0, 35, 0}, {0, 0, 0, 0}};
-        int[][] PieceTAbajo = {{0, 0, 0, 0}, {0, 36, 0, 0}, {37, 38, 39, 0}, {0, 0, 0, 0}};
-        int[][] PieceSquare = {{40, 41, 0, 0}, {42, 43, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
-        int[][] PieceDogIzquierda = {{44, 45, 0, 0}, {47, 48, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
-        int[][] PieceDogDerecha = {{0, 0, 0, 0}, {49, 50, 0, 0}, {51, 52, 0, 0}, {0, 0, 0, 0}};
+        //int[][] PieceLAbajo = {{0, 0, 15, 0}, {12, 13, 14, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
+        //int[][] PieceStickHorizontal = {{16, 17, 18, 19}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
+        //int[][] PieceStickVertical = {{20, 0, 0, 0}, {21, 0, 0, 0}, {22, 0, 0, 0}, {23, 0, 0, 0}};
+        //int[][] PieceTArriba = {{24, 25, 26, 0}, {0, 27, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
+        //int[][] PieceTIzquierda = {{28, 0, 0, 0}, {29, 30, 0, 0}, {31, 0, 0, 0}, {0, 0, 0, 0}};
+        //int[][] PieceTDerecha = {{0, 0, 32, 0}, {0, 33, 34, 0}, {0, 0, 35, 0}, {0, 0, 0, 0}};
+        //int[][] PieceTAbajo = {{0, 0, 0, 0}, {0, 36, 0, 0}, {37, 38, 39, 0}, {0, 0, 0, 0}};
+        //int[][] PieceSquare = {{40, 41, 0, 0}, {42, 43, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
+        //int[][] PieceDogIzquierda = {{44, 45, 0, 0}, {47, 48, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
+        //int[][] PieceDogDerecha = {{0, 0, 0, 0}, {49, 50, 0, 0}, {51, 52, 0, 0}, {0, 0, 0, 0}};
 
         // Puedes agregar más matrices aquí según sea necesario
 
